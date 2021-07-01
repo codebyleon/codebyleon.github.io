@@ -1,3 +1,7 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/*Reset CSS */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,4 +23,108 @@ body {
   opacity: 0;
   display: none;
   transition: opacity 2s ease-in;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-links {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  letter-spacing: 7px;
+  width: 40%;
+}
+
+.nav-links a {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  justify-content: space-evenly;
+  transition: 0.5s;
+}
+
+.nav-links a:hover {
+  color: #a1c7b6;
+}
+
+.home-btn {
+  text-transform: uppercase;
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  font-family: "Poppins", sans-serif;
+  color: #a1c7b6;
+  letter-spacing: 7px;
+  transition: 0.4s;
+}
+
+.home-btn:hover {
+  color: #fff;
+}
+
+.main img {
+  max-width: 900px;
+  max-height: 900px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.main h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 90px;
+  text-transform: lowercase;
+  text-align: right;
+  color: #fff;
+}
+
+.main h1 span {
+  color: #a1c7b6;
+}
+
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#github {
+  color: #a1c7b6;
+  top: 510px;
+  right: 116px;
+  position: absolute;
+  transition: 0.3s;
+}
+
+#instagram {
+  color: #a1c7b6;
+  top: 450px;
+  right: 120px;
+  position: absolute;
+  transition: 0.3s;
+}
+
+#github:hover {
+  color: #fff;
+}
+
+#instagram:hover {
+  color: #fff;
 }
